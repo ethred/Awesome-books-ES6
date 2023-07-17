@@ -62,36 +62,6 @@ class Books {
     saveToLocalStorage=() => {
       localStorage.setItem('books', JSON.stringify(this.books));
     }
-
-  //   // Add local time to date id
 }
 
-// Create object of Books class
 export default Books;
-
-//   renderBooks() {
-//     const bookSection = document.getElementById('books-section');
-//     const bookList = document.getElementById('book-list');
-//     bookList.innerHTML = '';
-
-//     this.books.forEach((book, index) => {
-//       const bookItem = document.createElement('li');
-//       bookItem.classList.add('book-item');
-//       bookItem.innerHTML = `
-//           <span>${book.title} by ${book.author}</span>
-//           <button class="remove-btn" data-index="${index}">Remove</button>
-//         `;
-//       bookList.appendChild(bookItem);
-//       bookSection.appendChild(bookList);
-//     });
-
-//     const removeButtons = document.getElementsByClassName('remove-btn');
-//     for (let i = 0; i < removeButtons.length; i += 1) {
-//       const removeButton = removeButtons[i];
-//       removeButton.addEventListener('click', (event) => {
-//         const { index } = event.target.dataset;
-//         this.removeBook(index);
-//         this.renderBooks();
-//       });
-//     }
-//   }

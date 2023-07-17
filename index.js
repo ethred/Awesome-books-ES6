@@ -2,7 +2,7 @@ import Books from './modules/input.js';
 import displayDateTime from './modules/display_date.js';
 import Navigater from './modules/navigater.js';
 
-const a = new Books();
+const bookcreate = new Books();
 const lists = document.getElementById('Lists');
 lists.addEventListener('click', (e) => {
   e.preventDefault();
@@ -10,8 +10,8 @@ lists.addEventListener('click', (e) => {
   display.lists();
 });
 
-const aBooks = document.getElementById('AddBooks');
-aBooks.addEventListener('click', (e) => {
+const addBooks = document.getElementById('AddBooks');
+addBooks.addEventListener('click', (e) => {
   e.preventDefault();
   const display = new Navigater();
   display.addNewBook();
@@ -34,8 +34,8 @@ formbut.addEventListener('click', () => {
 });
 
 // let a = new Books();
-a.createObject();
-a.displayBooks();
+bookcreate.createObject();
+bookcreate.displayBooks();
 displayDateTime();
 
 const removeButtons = document.getElementsByClassName('remove-btn');
