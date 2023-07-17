@@ -8,9 +8,6 @@ lists.addEventListener('click', (e) => {
   e.preventDefault();
   const display = new Navigater();
   display.lists();
-  window.addEventListener('load', () => {
-    reload()
-  });
 });
 
 const aBooks = document.getElementById('AddBooks');
