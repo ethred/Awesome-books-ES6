@@ -1,0 +1,216 @@
+* {
+  font-family: "Comic Neue", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  width: 37vw;
+  flex-direction: column;
+}
+
+footer p {
+  padding: 0 1%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  padding: 5%;
+}
+
+.container h1 {
+  margin: 1% 0;
+  padding-bottom: 5%;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3.5px solid #000;
+  margin-bottom: 5vh;
+}
+
+#display {
+  display: flex;
+}
+
+.display p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.display #book-author {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.display button {
+  width: 10vw;
+  margin: 3px 10px;
+  padding: 6px 5px;
+  border: 3px solid #000;
+  border-radius: 3%;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 80%);
+}
+
+.display button:hover {
+  background-color: #355c80;
+  border: 3px solid #000;
+  color: aliceblue;
+}
+
+.time-text {
+  font-family: "lato", sans-serif;
+  font-size: 1.25rem;
+  margin-right: 10px;
+  text-align: right;
+}
+
+#title,
+#author {
+  margin: 6px;
+  height: 40px;
+  border: 4px solid #000;
+  text-align: left;
+  padding-left: 2%;
+}
+
+#title::placeholder,
+#author::placeholder {
+  color: #000;
+}
+
+input {
+  color: #000;
+}
+
+#book&author {
+  display: flex;
+}
+
+div#books-container1 {
+  display: flex;
+  width: 100%;
+}
+
+div#books-container2 {
+  display: flex;
+  width: 100%;
+  background-color: lightgray;
+}
+
+button#addbtn {
+  width: 10vw;
+  margin: 3px 10px;
+  padding: 6px 5px;
+  border: 3px solid #000;
+  border-radius: 3%;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 80%);
+}
+
+button#addbtn:hover {
+  background-color: #355c80;
+  border: 3px solid #180505d3;
+  color: antiquewhite;
+}
+
+div#formbut {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  border: 1.5px solid #000;
+  margin: 1%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 36%;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-weight: 300;
+  border-left: 1px solid #000;
+  padding-left: 5%;
+}
+
+nav ul li:first-child {
+  border-left: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #355c80;
+}
+
+#date {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1% 2%;
+}
+
+footer {
+  margin: 5%;
+  padding: 1%;
+  border: 1.5px solid #000;
+  display: flex;
+  justify-content: flex-start;
+}
+
+h1#h1contact {
+  padding: 20px;
+}
+
+div#contactus {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+div#contactus li {
+  text-align: left;
+}
+
+div#contactus p {
+  text-align: left;
+}
+
+div#pwrapper {
+  padding: 20px;
+}
+
+#lists {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-new {
+  display: flex;
+  flex-direction: column;
+}

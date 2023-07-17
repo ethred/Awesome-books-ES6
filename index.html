@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books-Store</title>
     <link rel="stylesheet" href="index.css">
-    <title>AweSome-Books</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <script src="index.js"></script>
+    <header>
+        <nav>
+            <h3>awesome books</h3>
+            <ul>
+                <li><a href="#" id="Lists" value="Reload Page" onClick="window.location.reload(true)">Lists</a></li>
+                <li><a href="#" id="AddBooks">Add new</a> </li>
+                <li><a href="#" id="contactuss" >Contact</a></li>
+            </ul>
+        </nav>
+        <div id="date"></div>
+    </header>
+    <article id="time" class="time-text"></article>
+    <section class="container" id="container">
+        <div id="lists">
+            <h1>All awesome Books</h1>
+            <div class="display display-type-1" id="display"></div>
+        </div>
+        </div>
+       <div id="add-new">
+        <h1>Add a new book</h1>
+        <form action="">
+            <input type="text" id="title" placeholder="title">
+            <input type="text" id="author" placeholder="author"> 
+            <div id="formbut"><button id="addbtn"> Add</button></div>
+        </form>
+       </div>  
+    </section>
+    
+    <section>
+        <div id="contactus">
+        <h1 id="h1contact">Contact Information</h1>
+        <div id="pwrapper">
+            <p>Do you have any questions or you just want to say "Hello"?</p>
+            <p>You can reach out to us!</p>
+        </div>
+
+        <ul>
+            <li>Our email: mail@mail.com</li>
+            <li>Our phone number: 023243121234123</li>
+            <li>Our address: Streetname 22, 84052 City, Country</li>
+        </ul>
+        </div>
+
+    </section>
+
+ <footer>
+    <p>Copyright</p>
+ </footer>
+  
+ <script type="module" src="./index.js"></script>
 </body>
 </html>
