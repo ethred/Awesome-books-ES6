@@ -15,8 +15,6 @@ addBooks.addEventListener('click', (e) => {
   e.preventDefault();
   const display = new Navigater();
   display.addNewBook();
-  display.saveToLocalStorage();
-  window.location.reload();
 });
 
 const contactus = document.getElementById('contactuss');
@@ -26,20 +24,19 @@ contactus.addEventListener('click', (e) => {
   display.contactus();
 });
 
-const formbut = document.getElementById('addbtn');
-formbut.addEventListener('click', () => {
+const addnewBooks = document.getElementById('addbtn');
+addnewBooks.addEventListener('click', () => {
   const display = new Books();
   display.createObject();
   display.addBooks();
 });
 
-// let a = new Books();
 bookcreate.createObject();
 bookcreate.displayBooks();
 displayDateTime();
 
 const removeButtons = document.getElementsByClassName('remove-btn');
-for (let i = 0; i <= removeButtons.length; i += 1) {
+for (let i = 0; i < removeButtons.length; i += 1) {
   const removeButton = removeButtons[i];
   removeButton.addEventListener('click', (event) => {
     const { index } = event.target.dataset;
