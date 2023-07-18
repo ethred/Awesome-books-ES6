@@ -38,21 +38,42 @@ class Books {
       }
     }
 
+    update=() => {
+      const createdbooks = this.books;
+      const temp = [];
+      let whileloopintialized = 1;
+      createdbooks.forEach((item) => {
+        const x = createdbooks.length;
+
+        while (whileloopintialized <= x) {
+          const temptitle = item.title;
+          const tempauthor = item.author;
+          const Id = whileloopintialized;
+          temp.push({ Id, title: temptitle, author: tempauthor });
+          whileloopintialized += 1;
+          break;
+        }
+      });
+      this.books = temp;
+      this.saveToLocalStorage();
+      window.location.reload();
+    }
+
     removeBooks(removeId) {
       removeId = parseInt(removeId, 10);
       const book = this.books;
       const filter = book.filter((remBook, i) => {
         if (removeId === remBook.Id) {
           book.splice(i, 1);
-          this.displayBooks();
+          this.update();
           this.saveToLocalStorage();
         }
         return true;
       });
+
       return filter;
     }
 
-    //   // Save to local storage
     saveToLocalStorage=() => {
       localStorage.setItem('books', JSON.stringify(this.books));
     }

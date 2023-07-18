@@ -44,6 +44,5 @@ for (let i = 0; i < removeButtons.length; i += 1) {
     const data = new Books();
     data.createObject();
     data.removeBooks(indexval + 1);
-    window.location.reload();
   });
 }
